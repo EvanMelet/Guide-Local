@@ -1,3 +1,167 @@
+/* toute la page */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(180deg, #0056b3 0%, #002d5c 100%);
+    color: white;
+    min-height: 100vh;
+}
+
+/* le header */
+header nav {
+    display: flex;
+    justify-content: flex-end; /* les éléments sont alignés à droite là */
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(255, 255, 255, 0.1);
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header nav input[type="text"] {
+    background: #cbd5e0;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    width: 200px;
+    outline: none;
+}
+
+header nav button {
+    background: #003d7a;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* la section hero */
+.hero {
+    padding: 60px 50px;
+    max-width: 20000px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+/* rajout d'une image de fond pour la section hero */
+.hero {
+    background-image: url('Map.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}  
+
+/* la section lieux */
+.lieux {
+    padding: 20px 50px;
+}
+
+.lieux h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.lieux p {
+    max-width: 700px;
+    padding: 20px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* rajout d'une image sur le côté droit de la section lieux */
+.lieux {
+    background-image: url('localisation.png');
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/* sections des populaires */
+.populaires {
+    padding: 50px;
+}
+
+.populaires h2 {
+    margin: 0;
+}
+
+.populaires button {
+    background: #d1d5db;
+    color: #374151;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    float: right; /* bouton aligné à droite */
+    cursor: pointer;
+}
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px; /* espace entre titre et bouton */
+    clear: both;
+}
+
+.lieu-card {
+    background: #fff;
+    color: #333;
+    height: 300px;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    
+    /* image par défaut */
+    background-image: url('https://via.placeholder.com/400x300');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+/* rajout des images */
+.lieu-card {
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+/* chaque image par lieu */
+.lieu-card:nth-child(1) {
+    background-image: url('campus\ life\ 🏫.jpg');
+}
+
+.lieu-card:nth-child(2) {
+    background-image: url('Fachada\ clínica\ médica.jpg');
+}
+
+.lieu-card:nth-child(3) {
+    background-image: url('market.jpg');
+}
 /* Styles pour la carte Leaflet */
 #map {
   width: 100%;
@@ -24,11 +188,12 @@ footer{
     background-position-x: 75%;
     background-size: 200px 200px;
     background-color: #283452;
-
+    border-top: 1px solid rgba(255,255,255,0.1);
+    font-size: 13px;
+    opacity: 0.7;
     color: white;
     height: 75px;
     padding: 0 20px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;

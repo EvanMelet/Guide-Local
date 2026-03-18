@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide Local</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <!-- Leaflet JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
     <body>
@@ -35,26 +39,29 @@
 
         <section id="lieux" class="lieux">
             <h2>Lieux</h2>
-            <p>Guide local est une plateforme qui permet de découvrir facilement les lieux importants d'une ville.</p>
+            <p>Guide local est une plateforme qui permet de découvrir facilement les lieux importants d'une ville. 
+            Elle aide les utilisateurs à s'orienter et à trouver rapidement des endroits essentiels comme les universités, les hôpitaux et les marchés. </p>
         </section>
 
         <section id="carte" class="carte">
             <h3>Carte interactive</h3>
+            <div id="map"></div>
         </section>
 
         <section class="populaires">
-            <h2>Lieux les plus visités</h2>
+            <h2 class="lieux visités">Lieux les plus visités</h2>
             <button>VOIR TOUS LES LIEUX POPULAIRES</button>
             <div class="galerie">
-                <div class="lieu-card">Campus Universitaire</div>
-                <div class="lieu-card">Centre Hospitalier</div>
-                <div class="lieu-card">Marché principal de la ville</div>
+                <div class="lieu-card" data-index="0">Campus Universitaire</div>
+                <div class="lieu-card" data-index="1">Centre Hospitalier</div>
+                <div class="lieu-card" data-index="2">Marché principal</div>
             </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Guide Local</p>
+        <button><img src="assets/back-button.svg" alt="back icon"></button>
     </footer>
 
     <script src="script.js"></script>

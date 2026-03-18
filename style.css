@@ -1,4 +1,4 @@
-/* --- CONFIGURATION GLOBALE --- */
+/* toute la page */
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -7,10 +7,10 @@ body {
     min-height: 100vh;
 }
 
-/* --- NAVIGATION (Header) --- */
+/* le header */
 header nav {
     display: flex;
-    justify-content: flex-end; /* Aligne les éléments à droite comme sur l'image */
+    justify-content: flex-end; /* les éléments sont alignés à droite là */
     align-items: center;
     padding: 15px 50px;
     background: rgba(255, 255, 255, 0.1);
@@ -43,7 +43,7 @@ header nav button {
     cursor: pointer;
 }
 
-/* --- SECTION HERO --- */
+/* la section hero */
 .hero {
     padding: 60px 50px;
     max-width: 800px;
@@ -61,7 +61,7 @@ header nav button {
     line-height: 1.4;
 }
 
-/* --- SECTION LIEUX (L'encadré rose) --- */
+/* la section lieux */
 .lieux {
     padding: 20px 50px;
 }
@@ -78,9 +78,9 @@ header nav button {
     line-height: 1.5;
 }
 
-/* --- SECTION CARTE --- */
+/* la section carte */
 .carte {
-    background: #e0e0e0; /* Couleur simulant la carte vide en attendant le JS */
+    background: #e0e0e0;
     height: 400px;
     width: 100%;
     position: relative;
@@ -96,7 +96,7 @@ header nav button {
     z-index: 10;
 }
 
-/* --- SECTION POPULAIRES (Galerie) --- */
+/* sections des populaires */
 .populaires {
     padding: 50px;
 }
@@ -113,7 +113,7 @@ header nav button {
     border-radius: 20px;
     font-size: 0.7rem;
     font-weight: bold;
-    float: right; /* Aligne le bouton à droite */
+    float: right; /* bouton aligné à droite */
     cursor: pointer;
 }
 
@@ -121,8 +121,8 @@ header nav button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin-top: 60px; /* Espace après le titre et le bouton */
-    clear: both; /* Annule le float du bouton pour ne pas casser la grille */
+    margin-top: 60px; /* espace entre titre et bouton */
+    clear: both;
 }
 
 .lieu-card {
@@ -136,14 +136,14 @@ header nav button {
     font-weight: bold;
     box-sizing: border-box;
     
-    /* Image par défaut si tu n'en mets pas en HTML */
+    /* image par défaut */
     background-image: url('https://via.placeholder.com/400x300');
     background-size: cover;
     background-position: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-/* --- FOOTER --- */
+/* le footer */
 footer {
     padding: 30px 50px;
     border-top: 1px solid rgba(255,255,255,0.1);

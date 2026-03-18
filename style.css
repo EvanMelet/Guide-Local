@@ -46,7 +46,7 @@ header nav button {
 /* la section hero */
 .hero {
     padding: 60px 50px;
-    max-width: 800px;
+    max-width: 20000px;
 }
 
 .hero h1 {
@@ -60,6 +60,15 @@ header nav button {
     opacity: 0.9;
     line-height: 1.4;
 }
+/* rajout d'une image de fond pour la section hero */
+.hero {
+    background-image: url('Map.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}  
 
 /* la section lieux */
 .lieux {
@@ -76,6 +85,16 @@ header nav button {
     padding: 20px;
     font-size: 0.95rem;
     line-height: 1.5;
+}
+
+/* rajout d'une image sur le côté droit de la section lieux */
+.lieux {
+    background-image: url('localisation.png');
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 /* la section carte */

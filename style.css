@@ -1,3 +1,77 @@
+header {
+    background-color: #ffffff;
+    border-bottom: 3px solid #aba7a7;
+    padding: 12px 30px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 50px; /* ← réduit, 100px c'est trop grand */
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: underline;
+    color: #1a1a2e;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.search-login {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 2px solid #0d0de4;
+    border-radius: 25px;
+    padding: 8px 15px;
+    gap: 8px;
+}
+
+.search-icon {
+    height: 18px; /* ← taille fixe pour l'icône */
+    width: 18px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 15px;
+    width: 200px; /* ← trop petit avant (20px) */
+    color: #555;
+}
+
+.btn-connexion {
+    background-color: #0d0de4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-connexion:hover {
+    background-color: #0d0de4;
+}
 /* toute la page */
 body {
     margin: 0;
@@ -5,42 +79,6 @@ body {
     background: linear-gradient(180deg, #0056b3 0%, #002d5c 100%);
     color: white;
     min-height: 100vh;
-}
-
-/* le header */
-header nav {
-    display: flex;
-    justify-content: flex-end; /* les éléments sont alignés à droite là */
-    align-items: center;
-    padding: 15px 50px;
-    background: rgba(255, 255, 255, 0.1);
-    gap: 20px;
-}
-
-header nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-header nav input[type="text"] {
-    background: #cbd5e0;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 15px;
-    width: 200px;
-    outline: none;
-}
-
-header nav button {
-    background: #003d7a;
-    color: white;
-    border: none;
-    padding: 8px 25px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 /* la section hero */

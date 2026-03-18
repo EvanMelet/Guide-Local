@@ -142,6 +142,25 @@ header nav button {
     background-position: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
+/* rajout des images */
+.lieu-card {
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+/* chaque image par lieu */
+.lieu-card:nth-child(1) {
+    background-image: url('campus\ life\ 🏫.jpg');
+}
+
+.lieu-card:nth-child(2) {
+    background-image: url('Fachada\ clínica\ médica.jpg');
+}
+
+.lieu-card:nth-child(3) {
+    background-image: url('market.jpg');
+}
 
 /* le footer */
 footer {

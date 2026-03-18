@@ -16,4 +16,30 @@
 .carte h3 {
   margin-bottom: 20px;
   font-size: 24px;
+footer{
+    background-image: url("assets/map-icon-white.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 75%;
+    background-size: 200px 200px;
+    background-color: #283452;
+
+    color: white;
+    height: 75px;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer button{
+    height: 100%;
+    background-color: #283452;
+    border: none;
+    cursor: pointer;
+}
+
+footer button img{
+    max-height: 75%;
 }

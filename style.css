@@ -74,7 +74,7 @@ nav {
 }
 .hero {
     padding: 60px 50px;
-    background-image: url('Map.jpg');
+    background-image: url('assets/Map.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@ nav {
 }
 .lieux {
     padding: 20px 50px;
-    background-image: url('localisation.png');
+    background-image: url('assets/localisation.png');
     background-size: contain;
     background-position: right center;
     background-repeat: no-repeat;
@@ -176,15 +176,15 @@ nav {
 
 /* Image de chaque lieu */
 .lieu-card:nth-child(1) {
-    background-image: url('campus life 🏫.jpg');
+    background-image: url('assets/campus life 🏫.jpg');
 }
 
 .lieu-card:nth-child(2) {
-    background-image: url('Fachada clínica médica.jpg');
+    background-image: url('assets/Fachada clínica médica.jpg');
 }
 
 .lieu-card:nth-child(3) {
-    background-image: url('market.jpg');
+    background-image: url('assets/market.jpg');
 }
 
 

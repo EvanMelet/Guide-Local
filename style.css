@@ -2,47 +2,84 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(180deg, #0056b3 0%, #002d5c 100%);
+    background: linear-gradient(180deg, #0056b3 0%, #1e7adc 100%);
     color: white;
     min-height: 100vh;
+}/* le header */
+header {
+    background-color: #ffffff;
+    border-bottom: 2px solid #eed9db;
+    padding: 10px 30px;
 }
-
-/* le header */
-header nav {
+nav {
     display: flex;
-    justify-content: flex-end; /* les éléments sont alignés à droite là */
     align-items: center;
-    padding: 15px 50px;
-    background: rgba(255, 255, 255, 0.1);
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 0;
     gap: 20px;
 }
-
-header nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+.logo img {
+    height: 45px;
+    width: 45px;
+}
+.nav-links {
+    display: flex;
+    gap: 30px;
 }
 
-header nav input[type="text"] {
-    background: #cbd5e0;
-    border: none;
-    border-radius: 20px;
+.nav-links a {
+    text-decoration: underline;
+    color: #1a1a2e;
+    font-weight: 500;
+    font-size: 16px;
+}
+.search-login {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 2px solid #1a1a2e;
+    border-radius: 25px;
     padding: 8px 15px;
-    width: 200px;
-    outline: none;
+    gap: 8px;
 }
 
-header nav button {
-    background: #003d7a;
+/* Icône loupe */
+.search-icon {
+    height: 18px;
+    width: 18px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 15px;
+    width: 200px;
+    color: #555;
+}
+
+.btn-connexion {
+    background-color: #1a1a2e;
     color: white;
     border: none;
-    padding: 8px 25px;
-    border-radius: 20px;
+    border-radius: 25px;
+    padding: 10px 25px;
     font-weight: bold;
+    font-size: 15px;
     cursor: pointer;
 }
 
+.btn-connexion:hover {
+    background-color: #2e2e5e;
+}
 /* la section hero */
 .hero {
     padding: 60px 50px;

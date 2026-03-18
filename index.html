@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guide Local</title>
-    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
-    <!-- Leaflet JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-    <body>
+
+<body>
+
     <header>
         <nav>
-        <div class="logo">
-            <img src="Calque 1.png" alt="Guide Local">
-        </div>
-        <div class="nav-links">
-            <a href="#accueil">Accueil</a>
-            <a href="#carte">Carte</a>
-        </div>
-        <div class="search-login">
-            <div class="search-bar">
-                <img class="search-icon" src="Calque 0.png" alt="Rechercher">
-                <input type="text" placeholder="Rechercher un lieu">
+            <div class="logo">
+                <img src="Calque 1.png" alt="Guide Local">
             </div>
-            <button class="btn-connexion">Connexion</button>
-        </div>
-    </nav>
-</header>
-        <body>
+
+            <div class="nav-links">
+                <a href="#accueil">Accueil</a>
+                <a href="#carte">Carte</a>
+            </div>
+
+            <div class="search-login">
+                <div class="search-bar">
+                    <img class="search-icon" src="Calque 0.png" alt="Rechercher">
+                    <input type="text" placeholder="Rechercher un lieu">
+                </div>
+                <button class="btn-connexion">Connexion</button>
+            </div>
+        </nav>
+    </header>
     <main>
+
         <section id="accueil" class="hero">
             <h1>Guide Local</h1>
             <p>Découvrez facilement les lieux importants de votre ville et trouvez rapidement les services essentiels autour de vous.</p>
@@ -38,17 +40,17 @@
 
         <section id="lieux" class="lieux">
             <h2>Lieux</h2>
-            <p>Guide local est une plateforme qui permet de découvrir facilement les lieux importants d'une ville. 
-            Elle aide les utilisateurs à s'orienter et à trouver rapidement des endroits essentiels comme les universités, les hôpitaux et les marchés. </p>
+            <p>Guide Local est une plateforme qui permet de découvrir facilement les lieux importants d'une ville.
+            Elle aide les utilisateurs à s'orienter et à trouver rapidement des endroits essentiels comme les universités, les hôpitaux et les marchés.</p>
         </section>
 
         <section id="carte" class="carte">
-            <h3>Carte interactive</h3>
+            <h2>Carte interactive</h2>
             <div id="map"></div>
         </section>
 
         <section class="populaires">
-            <h2 class="lieux visités">Lieux les plus visités</h2>
+            <h2>Lieux les plus visités</h2>
             <button>VOIR TOUS LES LIEUX POPULAIRES</button>
             <div class="galerie">
                 <div class="lieu-card" data-index="0">Campus Universitaire</div>
@@ -57,12 +59,12 @@
             </div>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2026 Guide Local</p>
-        <button><img src="assets/back-button.svg" alt="back icon"></button>
+        <button><img src="assets/back-button.svg" alt="Retour en haut"></button>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
